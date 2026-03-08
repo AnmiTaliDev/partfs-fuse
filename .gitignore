@@ -1,0 +1,17 @@
+# Build output
+partfs
+libpartfs.so
+libpartfs.pc
+*.o
+*.a
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test artifacts
+*.img
+mnt/

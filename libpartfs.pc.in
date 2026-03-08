@@ -1,0 +1,13 @@
+prefix=@PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpartfs
+Description: PartFS filesystem FUSE driver library
+Version: @VERSION@
+URL: https://github.com/AnmiTaliDev/partfs-fuse
+Requires.private: fuse3
+Libs: -L${libdir} -lpartfs
+Libs.private: -lpthread
+Cflags: -I${includedir}/partfs
